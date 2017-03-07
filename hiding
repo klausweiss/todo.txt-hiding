@@ -5,7 +5,7 @@ shift
 
 [ "$action" = "usage" ] && {
   echo "  List hiding elements:"
-  echo "    listhiding|lsh [TERM...]"
+  echo "    hiding [TERM...]"
   echo "      list active tasks hiding specified contexts/projects"
   echo ""
   exit

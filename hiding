@@ -1,0 +1,17 @@
+#!/bin/sh
+
+action=$1
+shift
+
+[ "$action" = "usage" ] && {
+  echo "  List hiding elements:"
+  echo "    listhiding|lsh [TERM...]"
+  echo "      list active tasks hiding specified contexts/projects"
+  echo ""
+  exit
+}
+
+[ "$action" = "hiding" ] && {
+     python3 ${TODO_ACTIONS_DIR}/hiding/hiding.py "$TODO_SH" "$*"
+}
+

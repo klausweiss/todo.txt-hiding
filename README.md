@@ -23,6 +23,10 @@
 
         todo.sh hiding JAVA windows
 
+## Typical usage
+
+Use it to hide `@someday` tasks when using _todo.txt_ for [GTD](https://hamberg.no/gtd/) method.
+
 ## Compatibility
 
 Tested with *todo.txt* @DEV_VERSION@

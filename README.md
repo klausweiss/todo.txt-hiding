@@ -7,7 +7,7 @@
 1. `cd` into the addons directory
 2. clone this repository into the *hiding* directory:
 
-        git clone git@github.com:klausweiss/todo.txt-hiding.git hiding
+        git clone https://github.com/klausweiss/todo.txt-hiding.git hiding
 
 ## Usage
 

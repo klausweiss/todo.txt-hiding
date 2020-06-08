@@ -7,7 +7,7 @@ from subprocess import getstatusoutput
 import sys
 
 def main(todo_sh, to_hide):
-    todos = getstatusoutput("{} ls".format(todo_sh))[1].split('\n')
+    todos = getstatusoutput("bash {} ls".format(todo_sh))[1].split('\n')
     for line in todos:
         if all(keyword not in line for keyword in to_hide.split()):
             print(line)

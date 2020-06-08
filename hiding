@@ -12,6 +12,9 @@ shift
 }
 
 [ "$action" = "hiding" ] && {
-     python3 ${TODO_ACTIONS_DIR}/hiding/hiding.py "$TODO_SH" "$*"
+    if [ ! -z $@ ]; then
+	FILTER_COMMAND="grep -v $(echo $@ | sed 's/\s/|/g')"
+    fi
+    TODOTXT_FINAL_FILTER=$FILTER_COMMAND bash $TODO_SH ls
 }
 
